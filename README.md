@@ -1,6 +1,7 @@
 # Table of Contents
 1. [Complex Visual Plots](#cvp)
-2. [License](#license)
+2. [Benchmarks](#benchmarks)
+3. [License](#license)
 
 # Complex Visual Plots <a name="cvp"></a>
 This project contains files for visualizing complex functions. Given such
@@ -24,6 +25,18 @@ $w_{0}=z$, $w_{n+1}=w_{n}^{2}+z$. Performing a finite number of iterations can
 help us see how the Mandelbrot set starts to form. Six iterations yields the
 following image.
 ![Mandelbrot Six Iters](https://github.com/ryanmaguire/complex_visual_plots/blob/main/images/mandelbrot_six_iters.png "Mandelbrot Six Iters")
+
+# Benchmarks
+| Language               | Implementation | Time (s) | Flags              | Version                                  |
+| ---------------------- | -------------- | -------- | ------------------ | ---------------------------------------- |
+| C                      | gcc            |    0.061 | -O3 -flto          | gcc (Debian 10.2.1-6) 10.2.1 20210110    |
+| C                      | clang          |    0.061 | -O3 -flto          | Debian clang version 11.0.1-2            |
+| C++                    | g++            |    0.087 | -O3 -flto          | g++ (Debian 10.2.1-6) 10.2.1 20210110    |
+| C++                    | clang++        |    0.105 | -O3 -flto          | Debian clang version 11.0.1-2            |
+| C                      | pcc            |    0.146 | -O2                | Portable C Compiler 1.2.0.DEVEL 20200630 |
+| C                      | tcc            |    0.186 |                    | tcc version 0.9.27                       |
+| Go                     | golang         |    1.364 |                    | go 1.15.15                               |
+| Go                     | gccgo          |    1.645 | -O3 -flto          | gccgo (Debian 10.2.1-6) 10.2.1 20210110  |
 
 # License
     complex_visual_plots is free software: you can redistribute it and/or
