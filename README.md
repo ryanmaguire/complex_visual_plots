@@ -15,7 +15,9 @@ $|f(z)|$. For a function like $f(z)=z^{3}-1$ we get the following.
 There are also routines to iteratively compute functions over and over. This
 can help visual how Newton fractals occur. The polynomial $f(z)=z^{3}-1$ has
 Newton perturbation given by
+
 $$p(z)=z-\frac{f(z)}{f'(z)}=z-\frac{z^{3}-1}{3z^2}=\frac{2z^{3}+1}{3z^{2}}$$
+
 By defining $p_{0}(z)=p(z)$ and $p_{n+1}(z)=p(p_{n}(z))$ we can see how
 Newton fractals form (which correspond to $p_{\infty}$). Three iterations
 yield the following plot.
